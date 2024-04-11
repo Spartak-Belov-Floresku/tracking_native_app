@@ -11,6 +11,9 @@ export default function SigninScreen() {
 
   return (
     <View style={styles.container}>
+      {/**
+       * NavigationEvents is called once when navigation events fire.
+       */}
       <NavigationEvents onWillFocus={clearErrMsg} />
       <AuthForm
         headerText="Sign In for Tracker"
